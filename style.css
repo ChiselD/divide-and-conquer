@@ -11,7 +11,24 @@ a { /* Comment */ color: /* Comment */ Red; }
 }
 
 body {
+	border: 1px solid darkred; /* TESTING CODE */
 	background-color: rgb(210,220,250);
+	margin: 0;
+	padding: 20px;
+}
+
+header {
+	border: 1px solid darkblue; /* TESTING CODE */
+	width: 100%;
+	text-align: center;
+}
+
+#enter-info {
+	border: 1px solid darkgreen; /* TESTING CODE */
+}
+
+#display-results {
+	border: 1px solid goldenrod; /* TESTING CODE */
 }
 
 h1 {
