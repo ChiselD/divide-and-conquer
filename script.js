@@ -1,8 +1,6 @@
-// user starts typing
+// user enters text & clicks Search
 // text entered is compared against items saved
-// user sees suggested results: how?
-// option 1: they come up in a "live dropdown"
-// option 2: they appear clickable under RESULTS
+// user sees suggested results: they appear clickable under RESULTS
 // branch 1: user sees the correct item
 // b1: user selects correct item
 // b1: on click, RESULTS area loads item info
