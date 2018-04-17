@@ -1,5 +1,5 @@
 /*
-	Comment
+	periwinkle: rgb(210,220,250);
 */
 
 a { /* Comment */ color: /* Comment */ Red; }
@@ -12,7 +12,7 @@ a { /* Comment */ color: /* Comment */ Red; }
 
 body {
 	border: 1px solid darkred; /* TESTING CODE */
-	background-color: rgb(210,220,250);
+	background-color: rgb(210,250,220);
 	margin: 0;
 	padding: 20px;
 }
