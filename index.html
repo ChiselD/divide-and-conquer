@@ -13,10 +13,25 @@
 </header>
 
 <section id="enter-info">
- 	<p>What kind of trash do you have? Start typing in the box below and select whichever pop-up option best matches.</p>
+
+<!--  	<p>What kind of trash do you have? Start typing in the box below and select whichever pop-up option best matches.</p>
  	<input type="text" placeholder="trashy trash"></input>
  	<input type="submit" name="search" value="Search">
-	<p>No matching results found? Submit a new item <a href="#">here</a>.</p>
+	<p>No matching results found? Submit a new item <a href="#">here</a>.</p> -->
+
+	<label for "trashHunt">What kind of trash do you have? Start typing in the box below.</label><br />
+	<input list="trash" id="trash_types" name="trashytrash" />
+	<datalist id="trash">
+		<option value="glass medicine bottle">
+		<option value="plastic medicine bottle">
+		<option value="glass beer bottle">
+		<option value="plastic wrap">
+		<option value="meat">
+		<option value="coffee grounds">
+		<option value="foil yogurt cover">
+		<option value="toilet paper roll">
+	</datalist>
+
 </section>
 
 <section id="display-results">
