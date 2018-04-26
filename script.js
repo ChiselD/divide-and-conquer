@@ -21,3 +21,47 @@ function onInput() {
     }
   }
 }
+
+// function that loads trash options into datalist from JSON
+function getJSON() {
+  // get the datalist and input elements
+  var dataList = document.getElementById("trash");
+  var input = document.getElementById("trashytrash")
+  // load JSON file and populate options
+  // step 1: create a new XMLHttpRequest
+  var request = new XMLHttpRequest();
+  // step 2: handle state changes for the request
+  request.onreadystatechange = function(response) {
+    if (request.readyState === 4) {
+      if (request.status === 200) {
+        // parse the JSON
+        var jsonOptions = JSON.parse(request.responseText);
+        console.log(jsonOptions);
+        // loop over the JSON array
+        jsonOptions.trash.forEach(function(item) {
+          // create a new <option> element
+          var option = document.createElement('option');
+          // set the value using the item in the JSON array
+          option.value = item.name; // RETURN TO THIS!!! 'item' might be a problem
+          // add the <option> element to the <datalist>
+          dataList.appendChild(option);
+        });
+
+        // update the placeholder text
+        input.placeholder = "placeholder text goes here";
+      } else {
+        // an error occurred! :(
+        input.placeholder = "Couldn't load datalist options :(";
+      }
+    }
+  };
+
+  // update the placeholder text
+  input.placeholder = "Loading options...";
+
+  // set up and make the request
+  request.open('GET', 'trash-list.json', true);
+  request.send();
+}
+
+getJSON();
