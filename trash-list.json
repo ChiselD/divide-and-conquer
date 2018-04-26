@@ -1,0 +1,58 @@
+{
+  "trash": [
+    {
+      "name": "glass bottle",
+      "category": "glass",
+      "color": "white",
+      "notes": ""
+    },
+    {
+      "name": "plastic bottle",
+      "category": "packaging",
+      "color": "yellow",
+      "notes": ""
+    },
+    {
+      "name": "plastic wrap",
+      "category": "",
+      "color": "",
+      "notes": ""
+    },
+    {
+      "name": "meat",
+      "category": "",
+      "color": "",
+      "notes": ""
+    },
+    {
+      "name": "coffee grounds",
+      "category": "",
+      "color": "",
+      "notes": ""
+    },
+    {
+      "name": "aluminum foil",
+      "category": "",
+      "color": "",
+      "notes": ""
+    },
+    {
+      "name": "toilet paper roll",
+      "category": "",
+      "color": "",
+      "notes": ""
+    },
+    {
+      "name": "envelope with plastic window",
+      "category": "paper",
+      "color": "",
+      "notes": "Most  of the 'plastic' windows are actually made of a material that can be recycled along with the paper!"
+    },
+    {
+      "name": "",
+      "category": "",
+      "color": "",
+      "notes": ""
+    }
+  ]
+}
