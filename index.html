@@ -19,8 +19,8 @@
  	<input type="submit" name="search" value="Search">
 	<p>No matching results found? Submit a new item <a href="#">here</a>.</p> -->
 
-	<label for "trashHunt">What kind of trash do you have? Start typing in the box below.</label><br />
-	<input list="trash" id="trash_types" name="trashytrash" />
+	<label for "trashytrash">What kind of trash do you have? Start typing in the box below.</label><br />
+	<input type="text" list="trash" id="trashytrash" name="trash_types" oninput="onInput()"/>
 	<datalist id="trash">
 		<option value="glass medicine bottle">
 		<option value="plastic medicine bottle">
