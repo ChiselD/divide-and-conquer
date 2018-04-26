@@ -25,10 +25,12 @@ header {
 
 #enter-info {
 	border: 1px solid darkgreen; /* TESTING CODE */
+	padding: 20px;
 }
 
 #display-results {
 	border: 1px solid goldenrod; /* TESTING CODE */
+	padding: 20px;
 }
 
 h1 {
