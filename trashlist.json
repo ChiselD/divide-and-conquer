@@ -1,0 +1,58 @@
+{
+  "trash": [
+    {
+      "name": "glass bottle",
+      "category": "glass",
+      "color": "white",
+      "notes": "Notes about glass bottles here"
+    },
+    {
+      "name": "plastic bottle",
+      "category": "packaging",
+      "color": "yellow",
+      "notes": "Notes about plastic bottles here"
+    },
+    {
+      "name": "plastic wrap",
+      "category": "packaging",
+      "color": "yellow",
+      "notes": "Notes about plastic wrap here"
+    },
+    {
+      "name": "meat",
+      "category": "waste",
+      "color": "charcoal",
+      "notes": "Although meat is a food product, it can't be composted :("
+    },
+    {
+      "name": "coffee grounds",
+      "category": "compost",
+      "color": "brown",
+      "notes": "They make your compost smell better too :)"
+    },
+    {
+      "name": "aluminum foil",
+      "category": "waste",
+      "color": "charcoal",
+      "notes": "Notes about aluminum foil here"
+    },
+    {
+      "name": "toilet paper roll",
+      "category": "paper",
+      "color": "blue",
+      "notes": "Flatten the roll to make it take up less space in your recycling box"
+    },
+    {
+      "name": "envelope with plastic window",
+      "category": "paper",
+      "color": "blue",
+      "notes": "Most  of the 'plastic' windows are actually made of a material that can be recycled along with the paper!"
+    },
+    {
+      "name": "",
+      "category": "",
+      "color": "",
+      "notes": ""
+    }
+  ]
+}
