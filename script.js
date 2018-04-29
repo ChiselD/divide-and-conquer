@@ -14,6 +14,8 @@
 //   // go through JSON looking for object that matches this name; how?
 //   var json = JSON.parse("trash-list.json")
 // }
+var trashList = JSON.parse(trashlist);
+console.log(trashList);
 
 //////// FUNCTIONS FOR DISPLAYING TRASH ////////
 
