@@ -1,14 +1,19 @@
 
 //////// OBJECT TO TRACK CURRENT TRASH ////////
 
-// // set up blank object to be continuously updated // TEMPORARY
+// set up blank object to be continuously updated // TEMPORARY
 // var currentTrash = {
 //   "name": "",
 //   "category": "",
 //   "current": "",
 //   "notes": ""
 // };
-
+//
+// // function to update current trash
+// function updateCurrent() {
+//   // go through JSON looking for object that matches this name; how?
+//   var json = JSON.parse("trash-list.json")
+// }
 
 //////// FUNCTIONS FOR DISPLAYING TRASH ////////
 
@@ -31,7 +36,8 @@ function onInput() {
       var content = document.createTextNode(opts[i].value);
       destination.appendChild(content);
       // // update 'current trash' object // TEMPORARY
-      // currentTrash.name = // TEMPORARY
+      // currentTrash.name = val; // TEMPORARY
+      // updateCurrent(); // TEMPORARY
       break;
     }
   }
