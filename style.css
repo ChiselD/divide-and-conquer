@@ -2,13 +2,27 @@
 	periwinkle: rgb(210,220,250);
 */
 
-a { /* Comment */ color: /* Comment */ Red; }
 
-.TestClass {
-	color: Black;
-	background-color: White;
-	text-align: left;
+.yellow {
+	background-color: yellow;
 }
+
+.charcoal {
+	background-color: darkgray;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.brown {
+	background-color: brown;
+}
+
+.white {
+	background-color: white;
+}
+
 
 body {
 	border: 1px solid darkred; /* TESTING CODE */

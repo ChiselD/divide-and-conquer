@@ -1,4 +1,17 @@
 
+//////// OBJECT TO TRACK CURRENT TRASH ////////
+
+// // set up blank object to be continuously updated // TEMPORARY
+// var currentTrash = {
+//   "name": "",
+//   "category": "",
+//   "current": "",
+//   "notes": ""
+// };
+
+
+//////// FUNCTIONS FOR DISPLAYING TRASH ////////
+
 // function that makes your selected type of trash appear below the input
 function onInput() {
   // select the text input
@@ -17,6 +30,8 @@ function onInput() {
       // insert newly selected type of trash into results window
       var content = document.createTextNode(opts[i].value);
       destination.appendChild(content);
+      // // update 'current trash' object // TEMPORARY
+      // currentTrash.name = // TEMPORARY
       break;
     }
   }
@@ -42,7 +57,7 @@ function getJSON() {
           // create a new <option> element
           var option = document.createElement('option');
           // set the value using the item in the JSON array
-          option.value = item.name; // RETURN TO THIS!!! 'item' might be a problem
+          option.value = item.name;
           // add the <option> element to the <datalist>
           dataList.appendChild(option);
         });
@@ -65,3 +80,11 @@ function getJSON() {
 }
 
 getJSON();
+
+//////// FUNCTIONS FOR CHANGING COLOR ////////
+
+// // function that changes background color of results window // TEMPORARY
+// function changeColor() {
+//   var element = document.getElementById("results-here");
+//   element.classList.add("yellow");
+// }
