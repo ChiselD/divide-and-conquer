@@ -51,3 +51,10 @@ h1 {
 	font-family: 'Black Ops One', cursive;
 	font-size: 5rem;
 }
+
+html {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* ================================= */
