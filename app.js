@@ -9,6 +9,7 @@ const expressSanitizer = require("express-sanitizer");
 
 // APP CONFIG
 app.set("view engine", "ejs");
+app.use(express.static("public"));
 
 
 // MONGOOSE/MODEL CONFIG
