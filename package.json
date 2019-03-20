@@ -1,0 +1,27 @@
+{
+  "name": "divconq",
+  "version": "1.0.0",
+  "description": "trash sorting app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChiselD/divide-and-conquer.git"
+  },
+  "author": "ChiselD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChiselD/divide-and-conquer/issues"
+  },
+  "homepage": "https://github.com/ChiselD/divide-and-conquer#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-sanitizer": "^1.0.5",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.19"
+  }
+}

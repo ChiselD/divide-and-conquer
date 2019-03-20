@@ -1,0 +1,56 @@
+
+/******************************************/
+
+body {
+	background-color: rgb(210,250,220);
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+section {
+	/*border: 1px solid red;*/
+}
+
+.blackopsone {
+	font-family: "Black Ops One", cursive;
+}
+
+.jumbotron {
+	text-align: center;
+}
+
+#main {
+	max-width: 70%;
+	margin: 0 auto;
+	/*border: 1px solid blue;*/
+}
+
+/******************************************/
+
+/***** COLORS *****/
+
+/*
+	periwinkle: rgb(210,220,250);
+*/
+
+.yellow {
+	background-color: yellow;
+}
+
+.charcoal {
+	background-color: darkgray;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.brown {
+	background-color: brown;
+}
+
+.white {
+	background-color: white;
+}
