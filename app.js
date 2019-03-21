@@ -43,6 +43,11 @@ app.get("trash/:id", function(req, res) {
 	res.render("show");
 });
 
+// EDIT ROUTE
+app.get("trash/:id/edit", function(req, res) {
+	res.render("edit");
+});
+
 
 
 app.listen(port, process.env.IP, function() {
