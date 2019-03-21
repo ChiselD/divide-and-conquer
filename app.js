@@ -33,6 +33,11 @@ app.get("/trash/new", function(req, res) {
 	res.render("new");
 });
 
+// CREATE ROUTE
+app.post("/trash", function(req, res) {
+	res.redirect("/trash");
+});
+
 
 
 app.listen(port, process.env.IP, function() {
