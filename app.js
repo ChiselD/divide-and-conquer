@@ -53,6 +53,11 @@ app.put("/trash/:id", function(req, res) {
 	res.redirect("/trash/" + req.params.id);
 });
 
+// DELETE ROUTE
+app.delete("/trash/:id", function(req, res) {
+	res.redirect("/blogs");
+});
+
 
 
 app.listen(port, process.env.IP, function() {
