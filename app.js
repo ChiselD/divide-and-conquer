@@ -18,8 +18,9 @@ app.use(express.static("public"));
 
 // RESTFUL ROUTES
 
+// SEARCH ROUTE (landing page)
 app.get("/", function(req, res) {
-	res.redirect("/trash");
+	res.render("/search");
 });
 
 // INDEX ROUTE
