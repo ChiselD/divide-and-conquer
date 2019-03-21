@@ -20,12 +20,17 @@ app.use(express.static("public"));
 
 // SEARCH ROUTE (landing page)
 app.get("/", function(req, res) {
-	res.render("/search");
+	res.render("search");
 });
 
 // INDEX ROUTE
 app.get("/trash", function(req, res) {
 	res.render("index");
+});
+
+// NEW ROUTE
+app.get("/trash/new", function(req, res) {
+	res.render("new");
 });
 
 
