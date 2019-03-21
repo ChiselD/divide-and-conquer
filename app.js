@@ -48,6 +48,11 @@ app.get("trash/:id/edit", function(req, res) {
 	res.render("edit");
 });
 
+// UPDATE ROUTE
+app.put("/trash/:id", function(req, res) {
+	res.redirect("/trash/" + req.params.id);
+});
+
 
 
 app.listen(port, process.env.IP, function() {
