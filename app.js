@@ -38,6 +38,11 @@ app.post("/trash", function(req, res) {
 	res.redirect("/trash");
 });
 
+// SHOW ROUTE
+app.get("trash/:id", function(req, res) {
+	res.render("show");
+});
+
 
 
 app.listen(port, process.env.IP, function() {
