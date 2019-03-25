@@ -8,12 +8,37 @@ const expressSanitizer = require("express-sanitizer");
 
 
 // APP CONFIG
+mongoose.connect("mongodb://localhost/divconq", 
+	{useNewUrlParser: true, useFindAndModify: false});
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 
 // MONGOOSE/MODEL CONFIG
+const trashSchema = new mongoose.Schema({
+	name: String,
+	category: String,
+	color: String,
+	notes: String
+});
 
+const Trash = mongoose.model("Trash", trashSchema);
+
+
+// TEST CREATION
+
+// Trash.create({
+// 	name: "glass bottle",
+// 	category: "glass",
+// 	color: "white",
+// 	notes: "Notes about glass bottles here"
+// }, function(err, trash) {
+// 	if (err) {
+// 		console.log(err);
+// 	} else {
+// 		console.log(trash);
+// 	}
+// });
 
 
 // RESTFUL ROUTES
