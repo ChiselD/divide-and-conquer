@@ -9,11 +9,45 @@
 
 	<div id="main">
 
-		<section id="display-results">
+		<section id="new-trash-form">
 
-			<div id="results-here">
-				<p>trashy trash</p>
-			</div>
+			<form action="/trash" method="POST">
+
+				<div>
+					<label>Name</label>
+					<input type="text" name="trash[name]" placeholder="trash name" />
+				</div>
+
+				<div>
+					<label>Category</label>
+					<input type="text" name="trash[category]" placeholder="trash category" />
+				</div>
+
+				<div>
+					<label>Color</label>
+					<div id="colors">
+						<input type="radio" name="trash[color]" id="blue" value="blue" checked />
+						<label for="blue">blue</label>
+						<input type="radio" name="trash[color]" id="brown" value="brown" />
+						<label for="brown">brown</label>
+						<input type="radio" name="trash[color]" id="black" value="black" />
+						<label for="black">black</label>
+						<input type="radio" name="trash[color]" id="white" value="white" />
+						<label for="white">white</label>
+						<input type="radio" name="trash[color]" id="yellow" value="yellow" />
+						<label for="yellow">yellow</label>
+					</div>
+				</div>
+
+				<div>
+					<label>Notes</label>
+					<textarea name="trash[notes]" placeholder="Any notes on this trash? If not, enter NONE." required></textarea>
+				</div>
+
+				<div>
+					<input type="submit" name="submit">
+				</div>
+			</form>
 
 		</section>
 
