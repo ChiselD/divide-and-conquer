@@ -12,6 +12,8 @@ mongoose.connect("mongodb://localhost/divconq",
 	{useNewUrlParser: true, useFindAndModify: false});
 app.set("view engine", "ejs");
 app.use(express.static("public"));
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(expressSanitizer());
 
 
 // MONGOOSE/MODEL CONFIG
