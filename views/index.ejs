@@ -15,10 +15,12 @@
 				
 				<% trash.forEach(function(trash) {%>
 					<div class="trashytrash">
-						<h3><%= trash.name %></h3>
-						<p><%= trash.category %></p>
-						<p><%= trash.color %></p>
-						<p>Notes: <%= trash.notes %></p>
+						<!-- use h3 class to apply bgd of trash color -->
+						<h3 class="trash-name-display">
+							<a href="/trash/<%= trash._id %>">
+								<%= trash.name %>
+							</a>
+						</h3>
 					</div>
 				<% }); %>
 

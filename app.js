@@ -83,7 +83,15 @@ app.post("/trash", function(req, res) {
 
 // SHOW ROUTE
 app.get("/trash/:id", function(req, res) {
-	res.render("show");
+	Trash.findById(req.params.id, function(err, foundTrash) {
+		if (err) {
+			console.log(err);
+			console.log("Redirecting to index page...");
+			res.redirect("/trash");
+		} else {
+			res.render("show", {trash: foundTrash});
+		}
+	});
 });
 
 // EDIT ROUTE
