@@ -9,11 +9,47 @@
 
 	<div id="main">
 
-		<section id="display-results">
+		<section id="edit-trash-form">
 
-			<div id="results-here">
-				<p>trashy trash</p>
-			</div>
+			<form action="/trash/<%= trash._id %>?_method=PUT" method="POST">
+
+				<div>
+					<label>Name</label>
+					<input type="text" name="trash[name]" value="<%= trash.name %>" />
+				</div>
+
+				<div>
+					<label>Category</label>
+					<input type="text" name="trash[category]" value="<%= trash.category %>" />
+				</div>
+
+				<div>
+					<label>Color</label>
+					<div id="colors">
+						<input type="radio" name="trash[color]" id="blue" value="blue" checked />
+						<label for="blue">blue</label>
+						<input type="radio" name="trash[color]" id="brown" value="brown" />
+						<label for="brown">brown</label>
+						<input type="radio" name="trash[color]" id="black" value="black" />
+						<label for="black">black</label>
+						<input type="radio" name="trash[color]" id="white" value="white" />
+						<label for="white">white</label>
+						<input type="radio" name="trash[color]" id="yellow" value="yellow" />
+						<label for="yellow">yellow</label>
+					</div>
+				</div>
+
+				<div>
+					<label>Notes</label>
+					<textarea name="trash[notes]" required>
+						<%= trash.notes %>
+					</textarea>
+				</div>
+
+				<div>
+					<input type="submit" name="submit">
+				</div>
+			</form>
 
 		</section>
 

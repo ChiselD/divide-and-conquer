@@ -96,12 +96,29 @@ app.get("/trash/:id", function(req, res) {
 
 // EDIT ROUTE
 app.get("/trash/:id/edit", function(req, res) {
-	res.render("edit");
+	Trash.findById(req.params.id, function(err, foundTrash) {
+		if (err) {
+			console.log(err);
+			console.log("Redirecting to index page...");
+			res.redirect("/trash");
+		} else {
+			res.render("edit", {trash: foundTrash});
+		}
+	});
 });
 
 // UPDATE ROUTE
 app.put("/trash/:id", function(req, res) {
-	res.redirect("/trash/" + req.params.id);
+	req.body.trash.notes = req.sanitize(req.body.trash.notes);
+	Trash.findByIdAndUpdate(req.params.id, req.body.trash, function(err, updatedTrash) {
+		if (err) {
+			console.log(err);
+			console.log("Redirecting to index...");
+			res.redirect("/trash");
+		} else {
+			res.redirect("/trash/" + req.params.id);
+		}
+	});
 });
 
 // DELETE ROUTE
