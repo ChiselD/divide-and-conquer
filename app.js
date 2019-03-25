@@ -13,6 +13,7 @@ mongoose.connect("mongodb://localhost/divconq",
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(methodOverride("_method"));
 app.use(expressSanitizer());
 
 
@@ -30,10 +31,10 @@ const Trash = mongoose.model("Trash", trashSchema);
 // TEST CREATION
 
 // Trash.create({
-// 	name: "glass bottle",
-// 	category: "glass",
-// 	color: "white",
-// 	notes: "Notes about glass bottles here"
+// 	name: "plastic bottle",
+// 	category: "packaging",
+// 	color: "yellow",
+// 	notes: "Notes about plastic bottles here"
 // }, function(err, trash) {
 // 	if (err) {
 // 		console.log(err);
@@ -68,7 +69,16 @@ app.get("/trash/new", function(req, res) {
 
 // CREATE ROUTE
 app.post("/trash", function(req, res) {
-	res.redirect("/trash");
+	req.body.trash.notes = req.sanitize(req.body.trash.notes);
+	Trash.create(req.body.trash, function(err, newTrash) {
+		if (err) {
+			console.log(err);
+			console.log("Re-rendering new-trash form...");
+			res.render("new");
+		} else {
+			res.redirect("/trash");
+		}
+	});
 });
 
 // SHOW ROUTE
