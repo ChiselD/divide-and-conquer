@@ -39,12 +39,12 @@ app.post("/trash", function(req, res) {
 });
 
 // SHOW ROUTE
-app.get("trash/:id", function(req, res) {
+app.get("/trash/:id", function(req, res) {
 	res.render("show");
 });
 
 // EDIT ROUTE
-app.get("trash/:id/edit", function(req, res) {
+app.get("/trash/:id/edit", function(req, res) {
 	res.render("edit");
 });
 
