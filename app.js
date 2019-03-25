@@ -50,7 +50,13 @@ app.get("/", function(req, res) {
 
 // INDEX ROUTE
 app.get("/trash", function(req, res) {
-	res.render("index");
+	Trash.find({}, function(err, trashes) {
+		if (err) {
+			console.log(err);
+		} else {
+			res.render("index", {trash: trashes});
+		}
+	});
 });
 
 // NEW ROUTE
