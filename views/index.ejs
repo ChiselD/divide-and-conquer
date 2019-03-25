@@ -12,7 +12,16 @@
 		<section id="display-results">
 
 			<div id="results-here">
-				<p>trashy trash</p>
+				
+				<% trash.forEach(function(trash) {%>
+					<div class="trashytrash">
+						<h3><%= trash.name %></h3>
+						<p><%= trash.category %></p>
+						<p><%= trash.color %></p>
+						<p>Notes: <%= trash.notes %></p>
+					</div>
+				<% }); %>
+
 			</div>
 
 		</section>
