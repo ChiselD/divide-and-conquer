@@ -123,7 +123,15 @@ app.put("/trash/:id", function(req, res) {
 
 // DELETE ROUTE
 app.delete("/trash/:id", function(req, res) {
-	res.redirect("/blogs");
+	Trash.findByIdAndRemove(req.params.id, function(err) {
+		if (err) {
+			console.log(err);
+			console.log("Redirecting to index...");
+			res.redirect("/trash");
+		} else {
+			res.redirect("/trash");
+		}
+	});
 });
 
 

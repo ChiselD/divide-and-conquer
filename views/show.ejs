@@ -16,6 +16,10 @@
 				<p><%= trash.category %></p>
 				<p><%= trash.color %></p>
 				<p>Notes: <%= trash.notes %></p>
+				<a href="/trash/<%= trash._id %>/edit">edit</a>
+				<form id="delete" action="/trash/<%= trash._id %>?_method=DELETE" method="POST">
+					<button>Delete</button>
+				</form>
 			</div>
 
 		</section>
